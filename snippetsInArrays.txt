@@ -1,1 +1,6 @@
-function fooBar(uint[] memory myArg) internal returns(uint[] memory)
+
+function fooBar(uint[] memory _myaddr) public (internal) 
+
+function fooBar(uint[] calldata _myaddr) external (internal) 
+
+function fooBar(uint[] memory _myaddr) public view returns (uint[] memory)
