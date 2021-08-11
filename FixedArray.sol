@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 //by being fixed you lose acces to push and pop method 
 contract FixedArray{
 
-uint[5] myArray; //uint 5 can change 
+uint[5] myArray; //uint 5 can change //this is in storage
 
 function seeFixedArray() public view returns(uint[5] memory ){
     return myArray;
