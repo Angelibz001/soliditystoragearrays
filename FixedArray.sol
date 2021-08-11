@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-
+//by being fixed you lose acces to push and pop method 
 contract FixedArray{
 
 uint[5] myArray; //uint 5 can change 
