@@ -1,6 +1,5 @@
 pragma solidity ^0.8.0;
 
-
 contract storing{
     
 uint[] myArray;
@@ -21,6 +20,11 @@ function updateElement(uint _index, uint _element) public{
     myArray[_index] = _element;
 }
 
+function seeOnlyOneValue(uint _index) public view returns(uint) {
+    return myArray[_index];
+    
+}
+
 function deletesAndSetToZero(uint _index) public{
     delete myArray[_index]; //value to 0 
 } 
@@ -28,6 +32,7 @@ function deletesAndSetToZero(uint _index) public{
 function deletesLastElement() public{
     myArray.pop(); //deletes last element of array
 }
+
 
 
 }
